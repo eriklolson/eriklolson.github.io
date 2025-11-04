@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <title>Quizformat - myjoplin</title>
+  <link rel="stylesheet" href="/_markdown_plugin_assets/highlight.js/atom-one-light.css" /></head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">myjoplin</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">Quizformat</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1762209461560"
+                  >2025-11-03 14:37</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1762209475449"
+                  >2025-11-03 14:37</time
+                ></span
+              >
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><p>Always follow the markdown format given below when you generate a quiz or test.</p>
+<ul>
+<li>Replace <code>{{placeholders}}</code> with your real question content.</li>
+<li>To expand the quiz, just duplicate a question block and increment the numbering.</li>
+<li>Supports inline code blocks or full multi-line code examples inside <code>~~~~python</code>.</li>
+<li>Avoid giving hints to the answer in {{QuizTitle}}</li>
+</ul>
+<h1 id="quiztitle">{{QuizTitle}}</h1>
+<h2 id="one-question1_title">1️⃣ {{Question1_Title}}</h2>
+<p>{{Question1_Instruction}}</p>
+<div><pre class="hljs"><code>{{Question1_Code}}</code></pre></div>
+<ul>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-0" /><label id="cb-label-md-checkbox-0" for="md-checkbox-0" class="checkbox-label-unchecked">a) {{OptionA}}</label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1" /><label id="cb-label-md-checkbox-1" for="md-checkbox-1" class="checkbox-label-unchecked">b) {{OptionB}}</label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-2" /><label id="cb-label-md-checkbox-2" for="md-checkbox-2" class="checkbox-label-unchecked">c) {{OptionC}}</label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-3" /><label id="cb-label-md-checkbox-3" for="md-checkbox-3" class="checkbox-label-unchecked">d) {{OptionD}}</label></div></li>
+</ul>
+<hr />
+<h2 id="two-question2_title">2️⃣ {{Question2_Title}}</h2>
+<p>{{Question2_Instruction}}</p>
+<div><pre class="hljs"><code>{{Question2_Code}}</code></pre></div>
+<ul>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-4" /><label id="cb-label-md-checkbox-4" for="md-checkbox-4" class="checkbox-label-unchecked">a) {{OptionA}}</label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-5" /><label id="cb-label-md-checkbox-5" for="md-checkbox-5" class="checkbox-label-unchecked">b) {{OptionB}}</label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-6" /><label id="cb-label-md-checkbox-6" for="md-checkbox-6" class="checkbox-label-unchecked">c) {{OptionC}}</label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-7" /><label id="cb-label-md-checkbox-7" for="md-checkbox-7" class="checkbox-label-unchecked">d) {{OptionD}}</label></div></li>
+</ul>
+<hr />
+<hr />
+<p><strong>END</strong></p>
+<blockquote>
+<p><strong>Answer Key</strong><br />
+1️⃣ — {{Answer1}}<br />
+2️⃣ — {{Answer2}}</p>
+</blockquote>
+</div>
+      </article>
+    </div>
+  </body>
+</html>
