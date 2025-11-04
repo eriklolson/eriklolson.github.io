@@ -24,8 +24,8 @@
                 ></span
               >
               <span
-                >Updated At：<time datetime="1762220076084"
-                  >2025-11-03 17:34</time
+                >Updated At：<time datetime="1762292851978"
+                  >2025-11-04 13:47</time
                 ></span
               >
             </div>
@@ -40,24 +40,20 @@
         </header>
         <div class="article-content markdown-body"><h1 id="markdown-output-format">Markdown Output Format</h1>
 <ul>
-<li>
-<p>When “-md” is used, output <strong>raw markdown only</strong> — no explanations or wrappers.</p>
-</li>
-<li>
-<p><strong>All code blocks</strong> (non-inline, multi-line) must use this exact fence:</p>
-<div><pre class="hljs"><code>{<span class="hljs-meta">code</span>}</code></pre></div>
-</li>
-<li>
-<p>Do <strong>not</strong> use backticks or anything except <code>~~~~</code> for <strong>code fences</strong>.</p>
-</li>
-<li>
-<p><strong>Inline code</strong> (e.g., <code>len()</code>) still uses single backticks.</p>
-</li>
-<li>
-<p>Preserve spacing, indentation, and markdown syntax exactly as written.</p>
-</li>
+<li>When “-md” is used, output <strong>raw markdown only</strong> — no explanations or wrappers.</li>
+<li><strong>All code blocks</strong> (non-inline, multi-line) be indented <strong>must be indented (<code>&gt;</code>)</strong></li>
+<li><strong>All code blocks</strong> (non-inline, multi-line) must be <strong>fenced by four tildes (<code>~~~~</code>)</strong>, like so:</li>
 </ul>
-<p>joplin://x-callback-url/openNote?id=162e5ff8a96c4f73ad6f3b03d9e61e08</p>
+<blockquote>
+<div><pre class="hljs"><code>{code}  </code></pre></div>
+</blockquote>
+<ul>
+<li>Do <strong>not</strong> use backticks or anything except <code>~~~~</code> for <strong>code fences</strong>.</li>
+<li><strong>Inline code</strong> (e.g., <code>len()</code>) still uses single backticks.</li>
+<li>Preserve spacing, indentation, and markdown syntax exactly as written.</li>
+<li>Do not add emojis to titles</li>
+<li>Separate sections with ***</li>
+</ul>
 </div>
       </article>
     </div>
