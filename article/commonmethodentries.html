@@ -24,26 +24,29 @@
                 ></span
               >
               <span
-                >Updated At：<time datetime="1762287265317"
-                  >2025-11-04 12:14</time
+                >Updated At：<time datetime="1762336236468"
+                  >2025-11-05 01:50</time
                 ></span
               >
             </div>
             
           </div>
         </header>
-        <div class="article-content markdown-body"><h1 id="methodname-method-for-typelist"><code>.{{methodname}}()</code> Method for {{TypeList}}</h1>
+        <div class="article-content markdown-body"><p>(Links: <a title="#%7B%7Bmethodname%7D%7D-method-for-%7B%7Btype1slug%7D%7D" href="#%7B%7Bmethodname%7D%7D-method-for-%7B%7Btype1slug%7D%7D">{{Type1}</a>, <a title="#%7B%7Bmethodname%7D%7D-method-for-%7B%7Btype2slug%7D%7D" href="#%7B%7Bmethodname%7D%7D-method-for-%7B%7Btype2slug%7D%7D">{{Type2}}</a>, <a title="#%7B%7Bmethodname%7D%7D-method-for-%7B%7Btype3slug%7D%7D" href="#%7B%7Bmethodname%7D%7D-method-for-%7B%7Btype3slug%7D%7D">{{Type3 }}</a>, <a title="#%7B%7Bmethodname%7D%7D-method-for-%7B%7Btype4slug%7D%7D" href="#%7B%7Bmethodname%7D%7D-method-for-%7B%7Btype4slug%7D%7D">{{Type4}}</a>)</p>
+<h1 id="methodname-method-for-type1"><code>{{methodname}}()</code> Method for <em>{{Type1}}</em></h1>
 <blockquote>
-<p>Tip: Replace <code>{{TypeList}}</code> with a comma-separated list of collection types (e.g., <code>List, Tuple, Dictionary</code>).<br />
-Duplicate the per-type section below for as many types as needed (A, B, C, ...).<br />
-Add inline links in the title like: <code>List{link to section below}</code>, etc.</p>
+<p>{{ definition1 }}</p>
 </blockquote>
-<hr />
-<h2 id="methodname-for-typea"><code>.{{methodname}}()</code> for {{TypeA}}</h2>
-<p>{{Brief definition and usage for TypeA.}}</p>
-<h4 id="syntax">Syntax</h4>
-<div><pre class="hljs"><code>{{typeA_var}}.{{methodname}}({{params_if_any}})</code></pre></div>
-<h5 id="parameters-if-any">Parameters (if any)</h5>
+<h2 id="syntax">Syntax</h2>
+<blockquote>
+<div><pre class="hljs"><code>{{ syntax1 }}</code></pre></div>
+</blockquote>
+<h2 id="return-value">Return Value</h2>
+<blockquote>
+<p>{{ returnvalue1 }}</p>
+</blockquote>
+<p>{% if parameters1 %}</p>
+<h2 id="parameters">Parameters</h2>
 <table>
 <thead>
 <tr>
@@ -51,33 +54,40 @@ Add inline links in the title like: <code>List{link to section below}</code>, et
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td>—</td>
-<td>None</td>
-</tr>
-</tbody>
+<tbody></tbody>
 </table>
-<h5 id="return-value-if-any">Return Value (if any)</h5>
-<p>{{Describe the return value for TypeA, or write “None.”}}</p>
-<h4 id="errors-raised">Errors Raised?</h4>
-<p>{{List exceptions, or write “None.”}}</p>
-<h4 id="examples">Examples</h4>
-<p><strong>Example — {{concise example title for TypeA}}</strong></p>
+<p>{% for p in parameters1 -%}<br />
+| {{ p.name }} | {{ p.desc }} |<br />
+{% endfor %}<br />
+{% endif %}</p>
+<p>{% if errorsraisednote1 %}</p>
+<h2 id="errors-raised">Errors Raised</h2>
 <blockquote>
-<div><pre class="hljs"><code>{{typeA_var}} = {{example_literal_for_typeA}}
-{{result_var}} = {{typeA_var}}.{{methodname}}({{example_args}})
-<span class="hljs-built_in">print</span>({{result_var}})</code></pre></div>
+<p>{{ errorsraisednote1 }}<br />
+{% endif %}</p>
 </blockquote>
-<p>Output:</p>
-<div><pre class="hljs"><code>{{expected_output_for_typeA}}</code></pre></div>
+<blockquote>
+<p><strong>Example 1: {{ exampletitle1 }}</strong></p>
+<div><pre class="hljs"><code>{{ examplecode1 }}</code></pre></div>
+</blockquote>
+<p> </p>
 <hr />
 <hr />
-<h2 id="methodname-for-typeb"><code>.{{methodname}}()</code> for {{TypeB}}</h2>
-<p>{{Brief definition and usage for TypeB.}}</p>
-<h4 id="syntax-2">Syntax</h4>
-<div><pre class="hljs"><code>{{typeB_var}}.{{methodname}}({{params_if_any}})</code></pre></div>
-<h5 id="parameters-if-any-2">Parameters (if any)</h5>
+<p> </p>
+<h1 id="methodname-method-for-type2"><code>{{methodname}}()</code> Method for <em>{{Type2}}</em></h1>
+<blockquote>
+<p>{{ definition2 }}</p>
+</blockquote>
+<h2 id="syntax-2">Syntax</h2>
+<blockquote>
+<div><pre class="hljs"><code>{{ syntax2 }}</code></pre></div>
+</blockquote>
+<h2 id="return-value-2">Return Value</h2>
+<blockquote>
+<p>{{ returnvalue2 }}</p>
+</blockquote>
+<p>{% if parameters2 %}</p>
+<h2 id="parameters-2">Parameters</h2>
 <table>
 <thead>
 <tr>
@@ -85,33 +95,40 @@ Add inline links in the title like: <code>List{link to section below}</code>, et
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td>—</td>
-<td>None</td>
-</tr>
-</tbody>
+<tbody></tbody>
 </table>
-<h5 id="return-value-if-any-2">Return Value (if any)</h5>
-<p>{{Describe the return value for TypeB, or write “None.”}}</p>
-<h4 id="errors-raised-2">Errors Raised?</h4>
-<p>{{List exceptions, or write “None.”}}</p>
-<h4 id="examples-2">Examples</h4>
-<p><strong>Example — {{concise example title for TypeB}}</strong></p>
+<p>{% for p in parameters2 -%}<br />
+| {{ p.name }} | {{ p.desc }} |<br />
+{% endfor %}<br />
+{% endif %}</p>
+<p>{% if errorsraisednote2 %}</p>
+<h2 id="errors-raised-2">Errors Raised</h2>
 <blockquote>
-<div><pre class="hljs"><code>{{typeB_var}} = {{example_literal_for_typeB}}
-{{result_var}} = {{typeB_var}}.{{methodname}}({{example_args}})
-<span class="hljs-built_in">print</span>({{result_var}})</code></pre></div>
+<p>{{ errorsraisednote2 }}<br />
+{% endif %}</p>
 </blockquote>
-<p>Output:</p>
-<div><pre class="hljs"><code>{{expected_output_for_typeB}}</code></pre></div>
+<blockquote>
+<p><strong>Example 1: {{ exampletitle2 }}</strong></p>
+<div><pre class="hljs"><code>{{ examplecode2 }}</code></pre></div>
+</blockquote>
+<p> </p>
 <hr />
 <hr />
-<h2 id="methodname-for-typec"><code>.{{methodname}}()</code> for {{TypeC}}</h2>
-<p>{{Brief definition and usage for TypeC.}}</p>
-<h4 id="syntax-3">Syntax</h4>
-<div><pre class="hljs"><code>{{typeC_var}}.{{methodname}}({{params_if_any}})</code></pre></div>
-<h5 id="parameters-if-any-3">Parameters (if any)</h5>
+<p> </p>
+<h1 id="methodname-method-for-type3"><code>{{methodname}}()</code> Method for <em>{{Type3}}</em></h1>
+<blockquote>
+<p>{{ definition3 }}</p>
+</blockquote>
+<h2 id="syntax-3">Syntax</h2>
+<blockquote>
+<div><pre class="hljs"><code>{{ syntax3 }}</code></pre></div>
+</blockquote>
+<h2 id="return-value-3">Return Value</h2>
+<blockquote>
+<p>{{ returnvalue3 }}</p>
+</blockquote>
+<p>{% if parameters3 %}</p>
+<h2 id="parameters-3">Parameters</h2>
 <table>
 <thead>
 <tr>
@@ -119,38 +136,66 @@ Add inline links in the title like: <code>List{link to section below}</code>, et
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td>—</td>
-<td>None</td>
-</tr>
-</tbody>
+<tbody></tbody>
 </table>
-<h5 id="return-value-if-any-3">Return Value (if any)</h5>
-<p>{{Describe the return value for TypeC, or write “None.”}}</p>
-<h4 id="errors-raised-3">Errors Raised?</h4>
-<p>{{List exceptions, or write “None.”}}</p>
-<h4 id="examples-3">Examples</h4>
-<p><strong>Example — {{concise example title for TypeC}}</strong></p>
+<p>{% for p in parameters3 -%}<br />
+| {{ p.name }} | {{ p.desc }} |<br />
+{% endfor %}<br />
+{% endif %}</p>
+<p>{% if errorsraisednote3 %}</p>
+<h2 id="errors-raised-3">Errors Raised</h2>
 <blockquote>
-<div><pre class="hljs"><code>{{typeC_var}} = {{example_literal_for_typeC}}
-{{result_var}} = {{typeC_var}}.{{methodname}}({{example_args}})
-<span class="hljs-built_in">print</span>({{result_var}})</code></pre></div>
+<p>{{ errorsraisednote3 }}<br />
+{% endif %}</p>
 </blockquote>
-<p>Output:</p>
-<div><pre class="hljs"><code>{{expected_output_for_typeC}}</code></pre></div>
+<blockquote>
+<p><strong>Example 1: {{ exampletitle3 }}</strong></p>
+<div><pre class="hljs"><code>{{ examplecode3 }}</code></pre></div>
+</blockquote>
+<p> </p>
 <hr />
 <hr />
-<h3 id="notes">Notes</h3>
-<ul>
-<li>Keep <strong>behavioral differences</strong> between types explicit (e.g., how <code>.pop()</code> differs across lists/sets/dicts).</li>
-<li>Use <strong>consistent variable names</strong> per type (<code>lst</code>, <code>tup</code>, <code>st</code>, <code>d</code>, etc.).</li>
-<li>All multi-line code blocks use <code>~~~~</code> fences per your formatting rules.</li>
-<li>Inline code (like <code>len()</code>) uses single backticks.</li>
-<li>Duplicate the section for additional types as needed.</li>
-</ul>
+<p> </p>
+<h1 id="methodname-method-for-type4"><code>{{methodname}}()</code> Method for <em>{{Type4 }}</em></h1>
+<blockquote>
+<p>{{ definition4 }}</p>
+</blockquote>
+<h2 id="syntax-4">Syntax</h2>
+<blockquote>
+<div><pre class="hljs"><code>{{ syntax4 }}</code></pre></div>
+</blockquote>
+<h2 id="return-value-4">Return Value</h2>
+<blockquote>
+<p>{{ returnvalue4 }}</p>
+</blockquote>
+<p>{% if parameters4 %}</p>
+<h2 id="parameters-4">Parameters</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+<p>{% for p in parameters4 -%}<br />
+| {{ p.name }} | {{ p.desc }} |<br />
+{% endfor %}<br />
+{% endif %}</p>
+<p>{% if errorsraisednote4 %}</p>
+<h2 id="errors-raised-4">Errors Raised</h2>
+<blockquote>
+<p>{{ errorsraisednote4 }}<br />
+{% endif %}</p>
+</blockquote>
+<blockquote>
+<p><strong>Example 1: {{ exampletitle4 }}</strong></p>
+<div><pre class="hljs"><code>{{ examplecode4 }}</code></pre></div>
+</blockquote>
 <hr />
 <hr />
+<p><strong>END</strong></p>
 </div>
       </article>
     </div>
