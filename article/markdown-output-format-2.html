@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <title>Markdown Output Format-2 - myjoplin</title>
+  <link rel="stylesheet" href="/_markdown_plugin_assets/highlight.js/atom-one-light.css" /></head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">myjoplin</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">Markdown Output Format-2</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1763587571814"
+                  >2025-11-19 13:26</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1763587635064"
+                  >2025-11-19 13:27</time
+                ></span
+              >
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><h1 id="markdown-output-format">Markdown Output Format</h1>
+<ul>
+<li>When <strong>“-md”</strong> is used, the assistant must output <strong>raw Markdown only</strong>, with <strong>no rendering</strong>, <strong>no explanations</strong>, and <strong>no surrounding text</strong>.</li>
+<li>The entire response must be wrapped in an outer code fence using <strong>triple backticks with the <code>markdown</code> language tag</strong>.</li>
+<li>Do <strong>not</strong> close the outer ```markdown fence prematurely.</li>
+</ul>
+<h2 id="code-blocks">Code Blocks</h2>
+<ul>
+<li>Inline code uses single backticks (e.g., <code>len()</code>).</li>
+<li>All multi-line code fences must use <strong>tildes (<code>~~~~</code>)</strong>, never backticks.</li>
+<li>Inner fences always appear as:</li>
+</ul>
+<div><pre class="hljs"><code>
+code here</code></pre></div>
+<h2 id="mandatory-prefix-rule">Mandatory Prefix Rule</h2>
+<p>Inside any multi-line code block within <code>-md</code>:</p>
+<ul>
+<li>Every line of a <strong>non-output</strong> block must begin with <code>&gt;</code>.</li>
+<li>Every line of an <strong>output</strong> block must begin with <code>&gt;&gt;</code>.</li>
+</ul>
+<p>This applies to the opening <code>~~~~python</code>, the blank line after it, all code lines, the closing <code>~~~~</code>, and the blank line after the block.<br />
+There are <strong>no exceptions</strong>.</p>
+<h2 id="correct-example">Correct Example</h2>
+<blockquote>
+<div><pre class="hljs"><code>
+code</code></pre></div>
+<blockquote>
+<div><pre class="hljs"><code>
+output</code></pre></div>
+</blockquote>
+</blockquote>
+<h2 id="example-code-blocks">Example Code Blocks</h2>
+<p>Example code blocks must follow this exact structure:</p>
+<blockquote>
+<div><pre class="hljs"><code>
+<span class="hljs-comment">### Example {number}: {{exampletitle}} ###</span>
+{{examplecode}}</code></pre></div>
+<blockquote>
+<div><pre class="hljs"><code>
+{{examplecodeoutput}}</code></pre></div>
+</blockquote>
+</blockquote>
+<h2 id="general-non-example-code-blocks">General (Non-Example) Code Blocks</h2>
+<p>Non-example code blocks must follow this exact structure:</p>
+<blockquote>
+<div><pre class="hljs"><code>
+<span class="hljs-comment">### {{generalcodetitle}} ###</span>
+{{generalcode}}</code></pre></div>
+<blockquote>
+<div><pre class="hljs"><code>
+{{generalcodeoutput}}</code></pre></div>
+</blockquote>
+</blockquote>
+<h2 id="general-markdown-rules">General Markdown Rules</h2>
+<ul>
+<li>Preserve all spacing, indentation, and Markdown characters exactly.</li>
+<li>Do not add emojis unless a template explicitly requires them.</li>
+<li>Separate major sections using:</li>
+</ul>
+<h2 id="heading-hierarchy">Heading hierarchy:</h2>
+<ul>
+<li><code>#</code> for top-level</li>
+<li><code>##</code> for sections</li>
+<li><code>###</code> for subsections</li>
+</ul>
+</div>
+      </article>
+    </div>
+  </body>
+</html>
